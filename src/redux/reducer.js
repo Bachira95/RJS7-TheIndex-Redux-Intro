@@ -1,5 +1,7 @@
+import authors from '/src/data';
+
 const initialState = {
-  authors: "COMPLETE ME",
+  authors: authors,
   newAuthorId: "DO YOU NEED ME??"
 };
 
