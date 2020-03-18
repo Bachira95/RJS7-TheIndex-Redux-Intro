@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 
 // Components
 import AuthorCard from "./AuthorCard";
-import { connect } from "react-redux";
 
 const AuthorsList = props => {
   const authorCards = props.authors.map(author => (
@@ -21,8 +20,8 @@ const AuthorsList = props => {
 const mapStateToProps = state =>{
   // it returns an object
   return{
-    authors: state.authors;
+    authors: state.authors,
   };
 }
 
-export default connect()(AuthorsList);
+export default connect(mapStateToProps)(AuthorsList);
